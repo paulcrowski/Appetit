@@ -5,6 +5,8 @@
 /// main varible
 $primary-color: white;
 $secondary-color: black;
+$aboutus-color:#00B2B2;
+$services-color: yellow;
 // fonts
 //font-family: 'Lato', sans-serif;
 //font-family: 'Kaushan Script', cursive;
@@ -15,7 +17,11 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: justify;
   padding-top: 40px;
+  overflow-x: hidden;
 }
+
+.container-fluid {
+  padding: 0; }
 
 .headerText {
   font-family: 'Kaushan Script', cursive;
@@ -25,9 +31,43 @@ body {
   background: white;
 }
 
+.mainColor {
+  color: $primary-color;
+}
+
+.secondaryColor {
+  color:$secondary-color;
+}
 // ################### about us
 #aboutus {
-  background: #00B2B2;
+  background: $aboutus-color;
+}
+
+// ################## services
+#services, #newsletter {
+  background: $services-color;
+}
+
+.overImg {
+  position: absolute;
+  top:200px;
+  left:170px;
+}
+
+// ############ contact
+.intro {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+  background: url(../img/bg-forest.jpg) no-repeat bottom center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding: 100px 0;
 }
 
 // Extra small devices (portrait phones, less than 34em)
