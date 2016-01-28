@@ -1,0 +1,94 @@
+// import fonts Lato all fonts on website, Kaushan only some headers
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Kaushan+Script&subset=latin,latin-ext);
+
+/// colors
+/// main varible
+$primary-color: white;
+$secondary-color: black;
+$aboutus-color:#00B2B2;
+$services-color: yellow;
+// fonts
+//font-family: 'Lato', sans-serif;
+//font-family: 'Kaushan Script', cursive;
+
+body {
+  color: $secondary-color;
+  background: $primary-color;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  padding-top: 40px;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0; }
+
+.headerText {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.jumbotron {
+  background: white;
+}
+
+.mainColor {
+  color: $primary-color;
+}
+
+.secondaryColor {
+  color:$secondary-color;
+}
+// ################### about us
+#aboutus {
+  background: $aboutus-color;
+}
+
+// ################## services
+#services, #newsletter {
+  background: $services-color;
+}
+
+.overImg {
+  position: absolute;
+  top:200px;
+  left:170px;
+}
+
+// ############ contact
+.intro {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+  background: url(../img/bg-forest.jpg) no-repeat bottom center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding: 100px 0;
+}
+
+// Extra small devices (portrait phones, less than 34em)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 34em and up)
+@media (min-width: 34em) {
+
+}
+
+// Medium devices (tablets, 48em and up)
+@media (min-width: 48em) {
+
+}
+
+// Large devices (desktops, 62em and up)
+@media (min-width: 62em) {
+
+}
+
+// Extra large devices (large desktops, 75em and up)
+@media (min-width: 75em) {
+
+}
