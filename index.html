@@ -15,8 +15,8 @@
 <body>
 <!--############################ NAVIGATION-->
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Appetit</a>
+            <a class="navbar-brand headerText" href="#">Appetit</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,23 +33,42 @@
 
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">Welcome</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
 <!--#############################  ARTICLE-->
-<div class="container">
-
-    <div class="jumbotron">
-        <h1>Theme example</h1>
-        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
-    </div>
+<div class="container-fluid">
 
 
+        <div class="row">
+            <div class="col-md-offset-1 col-sm-5">
+                <h1>Welcome to Appetit Restaurant</h1>
+                <p>We are vert happy to quest you in our restaurant with healthy food. We offer many diffrent fresh foods, friuts, vege sets please check and visit us</p>
+                <a class="btn btn-warning" href="#" role="button">Link</a>
+            </div><!-- /col-sm-6-->
+            <div class="col-sm-5">
+                <img class="img-responsive" src="img/1strawberry.jpg" alt="strawberry">
+            </div> <!-- /col-sm-6-->
+        </div> <!-- /row-->
 
-</div> <!-- /container-fluid-->
+
+    <div class="row" id="aboutus">
+        <div class="col-md-offset-1 col-sm-5">
+            <img class="img-responsive" src="img/2strawberry.png" alt="strawberry">
+        </div><!-- /col-sm-6-->
+        <div class="col-sm-5">
+            <h2>About us:</h2>
+            <p>We are vert happy to quest you in our restaurant with healthy food. We offer many diffrent fresh foods, friuts, vege sets please check and visit us</p>
+            <a class="btn btn-warning" href="#" role="button">Link</a>
+        </div> <!-- /col-sm-6-->
+    </div> <!-- /row-->
+
+</div> <!-- /container-->
 
 <!--Jquery, JS Bootstrap, App-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
