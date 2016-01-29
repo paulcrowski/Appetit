@@ -16,12 +16,12 @@ body {
   background: $primary-color;
   font-family: 'Lato', sans-serif;
   text-align: justify;
-  padding-top: 40px;
-  overflow-x: hidden;
+  padding-top: 0px;
+  //overflow-x: hidden;
 }
 
 .navbar {
- //background: none;
+ background: none;
 }
 
 .container-fluid {
@@ -31,8 +31,15 @@ body {
   font-family: 'Kaushan Script', cursive;
 }
 
-.jumbotron {
-  background: white;
+// ######### welcome
+#welcome {
+  position: relative;
+  background: #fff url("../img/bg_header.png") center center;/*slide.jpg =>you image*/
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  padding: 380px 0;
 }
 
 .mainColor {
@@ -57,6 +64,26 @@ body {
   top:200px;
   left:170px;
 }
+
+//.paralax {
+//  background-color: cadetblue;
+//  color: white; }
+//
+//[class*="bg__"] {
+//  height: 50vh;
+//  /* fix background */
+//  background-attachment: fixed;
+//  /* center it */
+//  background-position: center center;
+//  /* Scale it nicely to the element */
+//  background-size: cover;
+//  /* just make it look a bit better ;) */ }
+////[class*="bg__"]:nth-child(2n) {
+////  box-shadow: inset 0 0 1em #111; }
+//
+//.bg__bar {
+//  background-image: url(../img/bg_services.png); }
+
 
 // ############ contact
 .intro {
