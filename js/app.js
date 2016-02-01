@@ -7,8 +7,7 @@ var test = function () {
     console.log('test');
 };
 
-<<<<<<< HEAD
-=======
+
 // scroll spy navbar changes
 // Add scrollspy to <body>
 $(function() {
@@ -30,4 +29,4 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
->>>>>>> master
+
