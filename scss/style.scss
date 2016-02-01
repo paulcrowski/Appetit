@@ -72,13 +72,15 @@ body {
   -webkit-box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
   -moz-box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
   box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 .btn-warning {
   color: #fff;
   background-color: #f0ad4e;
   border-color: #eea236;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow, background-color 0.3s ease-in-out;
 }
 .btn-warning:hover {
 //  background-color: yellow;
@@ -86,9 +88,32 @@ body {
   -moz-box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
   box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.6);
 }
+
+.btn-service {
+ padding: 35px 35px;
+  margin: 5px 0;
+}
+
+.glyphicon {
+  padding-left: 50px;
+  font-size: 1.7em;
+}
+
+.glyphicon::after {
+  width: 0;
+  height: 0;
+  border-left: 1px solid gray;
+  border-top: 71px solid gray;
+  position: absolute;
+  content: "";
+  top: -22px;
+  left: 20px;
+}
 // ################### about us
 #aboutus {
   background: $aboutus-color;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 // ################## services
@@ -102,6 +127,13 @@ body {
   left:170px;
 }
 
+
+// blog
+
+.test {
+  max-height:190px;
+  max-width:220px;
+}
 //.paralax {
 //  background-color: cadetblue;
 //  color: white; }
