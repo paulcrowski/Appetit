@@ -17,7 +17,7 @@ body {
   //background: $primary-color;
   font-family: 'Lato', sans-serif;
   text-align: justify;
-  padding-top: 0px;
+  //padding-top: 0px;
   //overflow-x: hidden;
 }
 
@@ -63,11 +63,29 @@ body {
   overflow: hidden;
   padding: 220px 0; // MD 380px 0
 }
-.navbar-inner{
-  background-image: none;
-  background-repeat: repeat-x;
-}
+//.navbar-inner{
+//  background-image: none;
+//  background-repeat: repeat-x;
+//}
 
+.btn {
+  -webkit-box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
+  -moz-box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
+  box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
+
+}
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.btn-warning:hover {
+//  background-color: yellow;
+  -webkit-box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
+  -moz-box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
+  box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.6);
+}
 // ################### about us
 #aboutus {
   background: $aboutus-color;
