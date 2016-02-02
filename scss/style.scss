@@ -230,6 +230,22 @@ a img {
   color: $aboutus-color;
 }
 
+// JS scroll to the top
+
+.top {
+  background-color: #9f449b;
+  bottom: 2em;
+  color: #fff;
+  display: none;
+  opacity: 0.6;
+  padding: 1.5em;
+  position: fixed;
+  right: 1.5em;
+  text-decoration: none; }
+
+.top:hover {
+  opacity: 1;
+  transition: 1s; }
 
 // Extra small devices (portrait phones, less than 34em)
 // No media query since this is the default in Bootstrap
