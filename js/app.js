@@ -1,16 +1,34 @@
 /**
  * Created by Pol on 2015-12-31.
  */
-console.log('test');
+//console.log('test');
+//
+//var test = function () {
+//    console.log('test');
+//};
 
-var test = function () {
-    console.log('test');
-};
+$(document).ready(function(){
 
+    function scrollMe () {
+        var offset=150; // when to show scroll button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > offset) {
+                $('.top').fadeIn(500);
+            }
+            else {
+                $('.top').fadeOut(500);
+            }
+        });
 
-// scroll spy navbar changes
-// Add scrollspy to <body>
-$(function() {
+        // Smooth animation when scrolling
+        $('.top').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0});
+        });
+
+    }
+
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').start().animate({
@@ -18,15 +36,19 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+
 
 // Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-});
+    $('body').scrollspy({
+        target: '.navbar-fixed-top'
+    });
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
 
+    });
+
+    scrollMe();
+
+});
