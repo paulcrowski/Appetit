@@ -139,8 +139,8 @@ a img {
 
 .overImg {
   position: absolute;
-  top:200px;
-  left:170px;
+  top:40px;
+  left:60px;
 }
 
 
@@ -245,27 +245,49 @@ a img {
 
 .top:hover {
   opacity: 1;
-  transition: 1s; }
+  transition: 0.9s;
+}
 
 // Extra small devices (portrait phones, less than 34em)
 // No media query since this is the default in Bootstrap
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
-// Small devices (landscape phones, 34em and up)
-@media (min-width: 34em) {
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .overImg {
+
+    top:100px;
+    left:120px;
+  }
+  .overImgTitle {
+    top: 90px;
+    font-size: 0.9em;
+    max-width:70%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .overImg {
+    top:190px;
+    left:130px;
+  }
+  .bgkcolor {
+    background: none; //md delete bgk
+  }
+
+  .overImgTitle {
+    top: 120px;
+    font-size: 1.1em;
+    max-width:8%;
+  }
 
 }
 
-// Medium devices (tablets, 48em and up)
-@media (min-width: 48em) {
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 
 }
 
-// Large devices (desktops, 62em and up)
-@media (min-width: 62em) {
 
-}
-
-// Extra large devices (large desktops, 75em and up)
-@media (min-width: 75em) {
-
-}
