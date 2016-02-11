@@ -49,6 +49,11 @@ $(document).ready(function(){
 
     });
 
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
     wow = new WOW(
         {
             boxClass:     'wow',      // default
