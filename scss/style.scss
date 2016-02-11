@@ -17,7 +17,6 @@ body {
   //color: $secondary-color;
   //background: $primary-color;
   font-family: 'Lato', sans-serif;
-  text-align: justify;
   //padding-top: 0px;
   //overflow-x: hidden;
 }
@@ -79,7 +78,7 @@ a img {
   box-shadow: 3px 11px 21px -5px rgba(0,0,0,0.43);
   margin-top: 20px;
   margin-bottom: 20px;
-
+  padding: 10px;
 }
 
 .btn-default {
@@ -110,6 +109,10 @@ a img {
   margin: 5px 0;
 }
 
+.widthbtn {
+  width: 250px;
+ font-size: 1.2em;
+}
 .glyphicon {
   padding-left: 50px;
   font-size: 1.7em;
