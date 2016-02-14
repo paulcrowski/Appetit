@@ -26,6 +26,9 @@ body {
   font-size: 1.3em;
 }
 
+h1, h2 {
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
 a img {
   margin: 10px 0;
 }
@@ -371,13 +374,14 @@ a img {
   width: 100%;
   max-width: 100%;
   text-align: center;
-  color: $secondary-color;
+  color: $primary-color;
   background: $primary-color url(../img/bg_contact.png) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   padding: 20px 0; //md padding: 100px 0;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);;
 }
 
 .form-control{
@@ -411,8 +415,34 @@ a img {
   transition: 0.9s;
 }
 
-// Extra small devices (portrait phones, less than 34em)
-// No media query since this is the default in Bootstrap
+// isotop
+
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -436,9 +466,9 @@ a img {
     top:190px;
     left:130px;
   }
-  .bgkcolor {
-    background: none; //md delete bgk
-  }
+  //.bgkcolor {
+  //  background: none; //md delete bgk
+  //}
 
   .overImgTitle {
     top: 120px;

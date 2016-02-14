@@ -58,7 +58,7 @@ $(document).ready(function(){
         {
             boxClass:     'wow',      // default
             animateClass: 'animated', // default
-            offset:       300,          // default
+            offset:       250,          // default
             mobile:       true,       // default
             live:         true        // default
         }
@@ -67,5 +67,33 @@ $(document).ready(function(){
     wow.init();
     //new WOW().init();
     scrollMe();
+
+    // init Isotope
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        return false;
+    });
+
 
 });
