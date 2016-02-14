@@ -6,9 +6,10 @@
 $primary-color: white;
 $secondary-color: black;
 $aboutus-color:#00B2B2;
-$blog-color: lightgreen;
-$services-color: yellow;
+$blog-color: rgba(241,231,103,1);;
+$services-color:  #55cc4f;
 $brand-primary: orange;
+
 // fonts
 //font-family: 'Lato', sans-serif;
 //font-family: 'Kaushan Script', cursive;
@@ -19,6 +20,7 @@ body {
   font-family: 'Lato', sans-serif;
   //padding-top: 0px;
   //overflow-x: hidden;
+  background-color: lightgoldenrodyellow;
 }
 
 .headerText {
@@ -139,8 +141,10 @@ a img {
 }
 
 // ################## services
-#services, #newsletter {
+#services {
+  color: white;
   background: $services-color;
+  //background: linear-gradient(to right, rgba(250,218,250,1) 0%, rgba(245,179,245,1) 100%);
 }
 
 .overImg {
@@ -148,7 +152,10 @@ a img {
   top:40px;
   left:60px;
 }
-
+#portfolio {
+  background: rgba(164,179,87,1);
+  background: linear-gradient(to right, rgba(247,235,172,1) 0%, rgba(235,220,50,1) 100%);
+}
 
 
 
@@ -173,6 +180,7 @@ a img {
 
 #blog {
   background: $blog-color;
+  background: linear-gradient(to right, rgba(242,195,138,1) 0%, rgba(250,176,85,1) 100%);
 }
 .overImgTitle {
    background-color: $primary-color;
@@ -212,6 +220,7 @@ a img {
 
 #counter_area {
   background-color: #01A6E0;
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
 }
 
 .facts {
